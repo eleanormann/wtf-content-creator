@@ -3,10 +3,11 @@ import { Button } from "./ui/Button";
 
 export default function PdfGenerator() {
   const [pdfUrl, setPdfUrl] = useState<string | null>(null);
+  const API_URL = import.meta.env.VITE_API_URL;
 
   const createPdf = async () => {
     try {
-      const response = await fetch("http://localhost:3001/api/pdf", {
+      const response = await fetch(`${API_URL}/api/pdf`, {
         method: "GET"
       });
 
@@ -42,7 +43,7 @@ export default function PdfGenerator() {
             <iframe
               src={pdfUrl}
               title="Generated PDF"
-              className="absolute top-0 left-0 w-full h-full border rounded shadow-md"
+              className="absolute top-0 left-0 w-full h-full"
             />
           </div>
         </div>
