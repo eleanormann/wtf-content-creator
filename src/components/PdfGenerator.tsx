@@ -10,8 +10,9 @@ export default function PdfGenerator() {
       const response = await fetch(`${API_URL}/api/pdf`, {
         method: "GET"
       });
-
+      
       if (!response.ok) {
+        console.log(`${API_URL}/api/pdf`);
         throw new Error("Failed to generate PDF");
       }
 
