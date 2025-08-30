@@ -9,9 +9,7 @@
     "build": "tsc -b && vite build",
     "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^19.1.1",
