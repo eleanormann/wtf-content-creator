@@ -3,6 +3,8 @@ This is a simple web page to request the latest Where to Find leaflet for the De
 
 V1 Release notes: Preview, download and save the pdf
 
+## Deployment
+Can be published on github pages using a manual trigger in github actions. The pdf creator api needs setting as a repository variable
 
 ## Template
 React + TypeScript + Vite
